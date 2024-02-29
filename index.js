@@ -268,10 +268,11 @@ async function sendNotifications() {
                 const chunk = list.slice(i, i + 30);
 
                 // Perform an action on the chunk
-                bot.sendMessage(ratebChatID, chunk.join(' '));
-                bot.sendMessage(user, chunk.join(' '));
+                // bot.sendMessage(ratebChatID, chunk.join(' '));
+                // bot.sendMessage(user, chunk.join(' '));
 
                 // bot.sendMessage(me, 'nasser');
+                console.log(chunk)
 
             }
         }
@@ -280,8 +281,10 @@ async function sendNotifications() {
         const remaining = list.slice((Math.floor(list.length / 30)) * 30);
         if (remaining.length > 0) {
             // Perform an action on the remaining elements
-            bot.sendMessage(ratebChatID, remaining.join(' '));
-            bot.sendMessage(user, remaining.join(' '));
+            // bot.sendMessage(ratebChatID, remaining.join(' '));
+            // bot.sendMessage(user, remaining.join(' '));
+            console.log(remaining)
+
 
 
 
